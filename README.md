@@ -1,5 +1,5 @@
 # RL78 SIS NOR FLASH
-- This is RL78 SIS BSP repository.
+- This is RL78 SIS NOR flash repository.
 - Please refer to the [APN](https://www.renesas.com/en/document/apn/rl78-family-serial-nor-flash-memory-control-module-software-integration-system) for more information.
 
 # License
