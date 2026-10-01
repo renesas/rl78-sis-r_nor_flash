@@ -3,7 +3,7 @@
 - Please refer to the [APN](https://www.renesas.com/en/document/apn/rl78-family-serial-nor-flash-memory-control-module-software-integration-system) for more information.
 
 # License
-- use condition is basically [MIT License](https://github.com/renesas/rl78-sis-r_bsp/blob/master/license.md).
+- use condition is basically [MIT License](https://github.com/renesas/rl78-sis-r_nor_flash/blob/master/license.md).
 
 # How to Install
 - The official package can be installed by Smart Configurator.
