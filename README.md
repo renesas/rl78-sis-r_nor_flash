@@ -7,7 +7,7 @@
 
 # How to Install
 - The official package can be installed by Smart Configurator.
-- This repository "GenericModules" folder can be installed(overwritten) into following folder in manually. SmartConfigurator can detect these GenericModules folder.
+- The Release Assets of this repository can be installed(overwritten) into following folder in manually. SmartConfigurator can detect these GenericModules folder.
   - For CS+:
     ```text
     C:\Users\<user_name>\.eclipse\com.renesas.smc.rcp.rl78.product_download\RL78_Modules\GenericModules
