@@ -6,17 +6,17 @@
     <toolchain>
         <brand>Renesas</brand>
         <product>CCRL</product>
-        <version>1.13.0</version>
+        <version>1.15.0</version>
     </toolchain>
     <toolchain>
         <brand>LLVM</brand>
         <product>LLVMRL78</product>
-        <version>10.0.0.202312</version>
+        <version>10.0.0.202506</version>
     </toolchain>
     <toolchain>
         <brand>IAR</brand>
         <product>ICCRL78</product>
-        <version>5.10.3</version>
+        <version>5.20.1</version>
     </toolchain>
 
     <!-- only one target entry allowed; multiple sub tags permitted -->
@@ -29,6 +29,8 @@
         <series>RL78G1x</series>
         <group>RL78G16</group>
         <group>RL78G15</group>
+        <series>RL78L2x</series>
+        <group>RL78L23</group>
     </target>
 
     <!-- only one package entry allowed -->
@@ -36,11 +38,11 @@
     <package>
         <type>RL78</type>
         <name>r_nor_flash</name>
-        <version>1.00</version>
-        <zipsource>r_nor_flash_rl78_v1.00.zip</zipsource>
+        <version>1.01</version>
+        <zipsource>r_nor_flash_rl78_v1.01.zip</zipsource>
         <dependency>
             <module>r_bsp</module>
-            <version>1.62</version>
+            <version>1.90</version>
         </dependency>
         <application>NOR FLASH</application>
         <desc>Serial NOR Flash memory control module.</desc>

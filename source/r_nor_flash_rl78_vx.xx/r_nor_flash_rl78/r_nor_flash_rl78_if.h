@@ -24,6 +24,7 @@
 /**********************************************************************************************************************
  * History      : DD.MM.YYYY Version  Description
  *              : 22.03.2024 1.00     Created
+ *              : 01.07.2025 1.01     Added RL78/L23 support.
  *********************************************************************************************************************/
 
 
@@ -44,7 +45,7 @@
  *********************************************************************************************************************/
 /* Driver version */
 #define NOR_FLASH_VERSION_MAJOR         (0x01U)
-#define NOR_FLASH_VERSION_MINOR         (0x00U)
+#define NOR_FLASH_VERSION_MINOR         (0x01U)
 
 /* Definitions of FLASH MEMORY TYPE */
 #define NOR_FLASH_TYPE_AT25SF           (0)         /* Renesas Electronics AT25SF       */
