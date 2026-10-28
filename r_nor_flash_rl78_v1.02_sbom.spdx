@@ -1,0 +1,29 @@
+SPDXVersion: SPDX-2.3
+DataLicense: CC0-1.0
+DocumentNamespace: https://www.renesas.com/spdx/r_nor_flash_rl78_v1.02_sbom
+DocumentName: r_nor_flash_rl78_v1.02_sbom
+SPDXID: SPDXRef-DOCUMENT
+
+## Creation Information
+Creator: Organization: Renesas Electronics Corporation
+Created: 2026-07-21T05:14:00Z
+LicenseListVersion: 3.28
+
+## Relationships
+Relationship: SPDXRef-DOCUMENT DESCRIBES SPDXRef-package-r-nor-flash-rl78
+
+## Package Information
+PackageName: r_nor_flash_rl78_v1.02
+SPDXID: SPDXRef-package-r-nor-flash-rl78
+PackageVersion: v1.02
+PackageFileName: r_nor_flash_rl78_v1.02.zip
+PackageSupplier: Organization: Renesas Electronics Corporation
+PackageOriginator: Organization: Renesas Electronics Corporation
+PackageDownloadLocation: https://www.renesas.com/document/scd/rl78-family-serial-nor-flash-memory-control-module-software-integration-system-sample-code 
+PackageChecksum: SHA256: 4aa574ad353dc20b813f988324e7a9afadfd76da50237220227918ec0b2ea901
+PackageHomePage: https://www.renesas.com/software-tool/sis
+PackageLicenseConcluded: BSD-3-Clause
+PackageLicenseDeclared: BSD-3-Clause
+PackageCopyrightText: <text>Renesas Electronics Corporation. All rights reserved.</text>
+PackageDescription: <text>See the documentation included in the package.</text>
+FilesAnalyzed: false

@@ -1,0 +1,36 @@
+{
+  "SPDXID" : "SPDXRef-DOCUMENT",
+  "spdxVersion" : "SPDX-2.3",
+  "creationInfo" : {
+    "created" : "2026-07-21T05:14:00Z",
+    "creators" : [ "Organization: Renesas Electronics Corporation" ],
+    "licenseListVersion" : "3.28"
+  },
+  "name" : "r_nor_flash_rl78_v1.02_sbom",
+  "dataLicense" : "CC0-1.0",
+  "documentNamespace" : "https://www.renesas.com/spdx/r_nor_flash_rl78_v1.02_sbom",
+  "packages" : [ {
+    "SPDXID" : "SPDXRef-package-r-nor-flash-rl78",
+    "checksums" : [ {
+      "algorithm" : "SHA256",
+      "checksumValue" : "4aa574ad353dc20b813f988324e7a9afadfd76da50237220227918ec0b2ea901"
+    } ],
+    "copyrightText" : "Renesas Electronics Corporation. All rights reserved.",
+    "description" : "See the documentation included in the package.",
+    "downloadLocation" : "https://www.renesas.com/document/scd/rl78-family-serial-nor-flash-memory-control-module-software-integration-system-sample-code",
+    "filesAnalyzed" : false,
+    "homepage" : "https://www.renesas.com/software-tool/sis",
+    "licenseConcluded" : "BSD-3-Clause",
+    "licenseDeclared" : "BSD-3-Clause",
+    "name" : "r_nor_flash_rl78_v1.02",
+    "originator" : "Organization: Renesas Electronics Corporation",
+    "packageFileName" : "r_nor_flash_rl78_v1.02.zip",
+    "supplier" : "Organization: Renesas Electronics Corporation",
+    "versionInfo" : "v1.02"
+  } ],
+  "relationships" : [ {
+    "spdxElementId" : "SPDXRef-DOCUMENT",
+    "relationshipType" : "DESCRIBES",
+    "relatedSpdxElement" : "SPDXRef-package-r-nor-flash-rl78"
+  } ]
+}
