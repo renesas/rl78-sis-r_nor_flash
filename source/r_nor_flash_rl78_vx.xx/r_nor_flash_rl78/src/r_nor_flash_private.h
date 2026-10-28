@@ -1,21 +1,8 @@
-/**********************************************************************************************************************
- * DISCLAIMER
- * This software is supplied by Renesas Electronics Corporation and is only intended for use with Renesas products. No
- * other uses are authorized. This software is owned by Renesas Electronics Corporation and is protected under all
- * applicable laws, including copyright laws.
- * THIS SOFTWARE IS PROVIDED "AS IS" AND RENESAS MAKES NO WARRANTIES REGARDING
- * THIS SOFTWARE, WHETHER EXPRESS, IMPLIED OR STATUTORY, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. ALL SUCH WARRANTIES ARE EXPRESSLY DISCLAIMED. TO THE MAXIMUM
- * EXTENT PERMITTED NOT PROHIBITED BY LAW, NEITHER RENESAS ELECTRONICS CORPORATION NOR ANY OF ITS AFFILIATED COMPANIES
- * SHALL BE LIABLE FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES FOR ANY REASON RELATED TO
- * THIS SOFTWARE, EVEN IF RENESAS OR ITS AFFILIATES HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
- * Renesas reserves the right, without notice, to make changes to this software and to discontinue the availability of
- * this software. By using this software, you agree to the additional terms and conditions found by accessing the
- * following link:
- * http://www.renesas.com/disclaimer
- *
- * Copyright (C) 2024 Renesas Electronics Corporation. All rights reserved.
- *********************************************************************************************************************/
+/*
+* Copyright (c) 2024 Renesas Electronics Corporation and/or its affiliates
+*
+* SPDX-License-Identifier: BSD-3-Clause
+*/
 /**********************************************************************************************************************
  * File Name    : r_nor_flash_private.h
  * Version      : 1.00
@@ -80,30 +67,39 @@
 #if (NOR_FLASH_CFG_DRVR_CH == NOR_FLASH_DRVR_CH0)
     #define NOR_FLASH_CSI_NAME              Config_CSI00            /* CSI channel name "Config_CSI00" */
     #define NOR_FLASH_CSI_SIO_ADDRESS       ((uint16_t)&SIO00)      /* SIO register address */
+    #define NOR_FLASH_CSI_SSR               (SSR00)
 #elif (NOR_FLASH_CFG_DRVR_CH == NOR_FLASH_DRVR_CH1)
     #define NOR_FLASH_CSI_NAME              Config_CSI01            /* CSI channel name "Config_CSI01" */
     #define NOR_FLASH_CSI_SIO_ADDRESS       ((uint16_t)&SIO01)      /* SIO register address */
+    #define NOR_FLASH_CSI_SSR               (SSR01)
 #elif (NOR_FLASH_CFG_DRVR_CH == NOR_FLASH_DRVR_CH2)
     #define NOR_FLASH_CSI_NAME              Config_CSI10            /* CSI channel name "Config_CSI10" */
     #define NOR_FLASH_CSI_SIO_ADDRESS       ((uint16_t)&SIO10)      /* SIO register address */
+    #define NOR_FLASH_CSI_SSR               (SSR02)      
 #elif (NOR_FLASH_CFG_DRVR_CH == NOR_FLASH_DRVR_CH3)
     #define NOR_FLASH_CSI_NAME              Config_CSI11            /* CSI channel name "Config_CSI11" */
     #define NOR_FLASH_CSI_SIO_ADDRESS       ((uint16_t)&SIO11)      /* SIO register address */
+    #define NOR_FLASH_CSI_SSR               (SSR03)
 #elif (NOR_FLASH_CFG_DRVR_CH == NOR_FLASH_DRVR_CH4)
     #define NOR_FLASH_CSI_NAME              Config_CSI20            /* CSI channel name "Config_CSI20" */
     #define NOR_FLASH_CSI_SIO_ADDRESS       ((uint16_t)&SIO20)      /* SIO register address */
+    #define NOR_FLASH_CSI_SSR               (SSR10)
 #elif (NOR_FLASH_CFG_DRVR_CH == NOR_FLASH_DRVR_CH5)
     #define NOR_FLASH_CSI_NAME              Config_CSI21            /* CSI channel name "Config_CSI21" */
     #define NOR_FLASH_CSI_SIO_ADDRESS       ((uint16_t)&SIO21)      /* SIO register address */
+    #define NOR_FLASH_CSI_SSR               (SSR11)
 #elif (NOR_FLASH_CFG_DRVR_CH == NOR_FLASH_DRVR_CH6)
     #define NOR_FLASH_CSI_NAME              Config_CSI30            /* CSI channel name "Config_CSI30" */
     #define NOR_FLASH_CSI_SIO_ADDRESS       ((uint16_t)&SIO30)      /* SIO register address */
+    #define NOR_FLASH_CSI_SSR               (SSR12)
 #elif (NOR_FLASH_CFG_DRVR_CH == NOR_FLASH_DRVR_CH7)
     #define NOR_FLASH_CSI_NAME              Config_CSI31            /* CSI channel name "Config_CSI31" */
     #define NOR_FLASH_CSI_SIO_ADDRESS       ((uint16_t)&SIO31)      /* SIO register address */
+    #define NOR_FLASH_CSI_SSR               (SSR13)
 #endif
 
 /* **** Definition of string conversion to access CSI functions **** */
+#define NOR_FLASH_CSI_IS_BUSY()                 ((NOR_FLASH_CSI_SSR & _0040_SAU_UNDER_EXECUTE) != 0U)
 #define NOR_FLASH_CSI_START_FUNC1( x )          R_##x##_Start               /* String "R_x_Start" */
 #define NOR_FLASH_CSI_START_FUNC2( x )          NOR_FLASH_CSI_START_FUNC1( x )
 #define NOR_FLASH_CSI_STOP_FUNC1( x )           R_##x##_Stop                /* String "R_x_Stop" */
